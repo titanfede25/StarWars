@@ -1,10 +1,62 @@
 @font-face {
-  font-family: 'StarJedi';
-  src: url('./models/stjelogo/Stjldbl1.ttf') format('truetype');
+  font-family: 'Death Star';
+  src: url('./models/deathstar/Death\ Star.otf') format('truetype');
 }
 
 h1 {
-  font-family: 'StarJedi', sans-serif;
+  font-family: "Death Star";
   color: yellow;
-  text-shadow: 0 0 10px #FFD700;
+  font-size:45px;
+}
+
+body{
+  background-attachment: fixed;
+  background-image:url('models/backgrund.png');
+  color: white;
+  margin-left:2.5%;
+  margin-right:2.5%;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding: 15px;
+  border-radius: 5px;
+  flex-wrap: nowrap;  
+} 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+}
+  
+nav a {
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+p{
+  font-size:25px;
+  text-align:justify;
+}
+
+a{
+  font-size:20px;
+  color:red;
+  text-decoration: none;
 }

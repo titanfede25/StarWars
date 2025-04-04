@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'StarJedi';
+  src: url('./models/stjelogo/Stjldbl1.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'StarJedi', sans-serif;
+  color: yellow;
+  text-shadow: 0 0 10px #FFD700;
+}

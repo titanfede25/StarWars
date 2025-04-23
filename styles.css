@@ -50,18 +50,7 @@ nav a {
     white-space: nowrap;
   }
 
-.historia{
-    background-color: blue;
-    border-radius: 5px;
-    border: 2px solid yellow;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: yellow;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.peliculas{
+.seleccionado{
     background-color: blue;
     border-radius: 5px;
     border: 2px solid yellow;
@@ -93,4 +82,8 @@ hr{
   border:none;
   height: 4px;
   background-color: yellow;
+}
+
+.guino{
+  text-align: justify;
 }

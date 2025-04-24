@@ -87,3 +87,23 @@ hr{
 .guino{
   text-align: justify;
 }
+
+.adivino{
+  width: 160px; 
+  height: 28px; 
+  font-size: 22px; 
+  text-align: center; 
+  border-radius:5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+
+.enviar{
+  width: 120px; 
+  height: 40px; 
+  font-size: 22px; 
+  text-align: center; 
+  background-color: yellow; 
+  border-radius: 5px;
+  font-family: "Death Star";
+}

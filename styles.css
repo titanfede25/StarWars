@@ -52,7 +52,7 @@ nav a {
   }
 
 .seleccionado{
-    background-color: blue;
+    background-color: rgb(74, 74, 74);
     border-radius: 5px;
     border: 2px solid yellow;
     padding: 10px 20px;

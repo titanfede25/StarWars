@@ -79,6 +79,13 @@ img{
   border-color: yellow;
 }
 
+.link:hover{
+  border: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: red;
+}
+
 hr{
   border:none;
   height: 4px;

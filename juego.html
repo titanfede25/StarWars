@@ -24,9 +24,32 @@
 
     <main>
     <h1>JUEGO (BONUS)</h1>
+    <h2>¡Adivina el personaje!</h2>
     <img src="models/img/hansolo.jpg" width="400px" height="300px" alt="solo">
+
+    <script language="javascript">
+        let characterId = Math.floor(Math.random() * 81) + 1;; // Por ejemplo, Luke Skywalker tiene el ID 1, es del 1 al 81
+        fetch(`https://akabab.github.io/starwars-api/api/id/${characterId}.json`)
+        .then(response => {
+            if (!response.ok) {throw new Error(`HTTP error! status: ${response.status}`);}
+            return response.json();
+        })
+        .then(character => {
+            // 'character' será directamente el objeto del personaje con el ID especificado.
+            console.log("Personaje encontrado:", character);
+
+            let imgElement = document.createElement('img');
+            imgElement.src = character.image;
+            imgElement.alt = character.name;
+            document.body.appendChild(imgElement);
+        })
+        .catch(error => {
+            console.error('Hubo un problema con la operación fetch:', error);
+        });
+    </script>
+
     <form>
-        <h2>¡¡¡¡¡Adivina quién es este personaje!!!!!</h2><input type="text" class="adivino" style="width: 160px; height: 28px; font-size: 22px; text-align: center; border-radius:5px">
+        <input type="text" class="adivino" style="width: 160px; height: 28px; font-size: 22px; text-align: center; border-radius:5px">
         <br>
         <br>
         <input type="submit" value="ENVIAR" class="enviar" style="width: 120px; height: 40px; font-size: 22px; text-align: center; background-color: yellow; border-radius: 5px">

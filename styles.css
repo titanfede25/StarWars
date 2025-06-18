@@ -97,9 +97,6 @@ hr{
 }
 
 .adivino{
-  width: 160px; 
-  height: 28px; 
-  font-size: 22px; 
   text-align: center; 
   border-radius:5px;
   font-family: 'Rajdhani', sans-serif;
@@ -114,4 +111,24 @@ hr{
   background-color: yellow; 
   border-radius: 5px;
   font-family: "Death Star";
+}
+
+.no_haga{
+  display: none;
+  text-align: center;
+  color:lightseagreen;
+}
+
+.form{
+  font-size: 22.2px;
+  background-color: rgba(72, 71, 71, 0.812);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.select{
+  font-size: 16px;
 }

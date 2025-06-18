@@ -25,14 +25,15 @@
     <main>
     <h1>Creacion de Personaje</h1>
     <h2>¡Crea tu propio personaje!</h2>
-    <img id="img" src="https://www.eaprende.com/la-busqueda/images/silueta-hombre.png" width="400px" height="300px" alt="image"><br><br>
+    <img id="img" src="https://www.eaprende.com/la-busqueda/images/silueta-hombre.png" class="link"width="400px" height="300px" alt="image">
+    <p id="no_haga" class="no_haga">No haga doble click sobre la imagen!</p>
 
-    <form id="form">
+    <form id="form" class="form">
         <label>Escribe su nombre:</label>
-        <input id="nombre" name="nombre" type="text" class="adivino" style="width: 160px; height: 28px; font-size: 22px; text-align: center; border-radius:5px" required><br>
+        <input id="nombre" name="nombre" type="text" class="adivino" style="width: 160px; height: 18px; font-size: 20px; text-align: center; border-radius:5px" required><br>
 
         <label>Selecciona su especie:</label>
-        <select id="especie" name="especie">
+        <select id="especie" name="especie" class="select">
             <option value="humano">Humano</option>
             <option value="ewok">Ewok</option>
             <option value="gungan">Gungan</option>
@@ -47,17 +48,17 @@
         </select><br>
 
         <label>Escribe su edad:</label>
-        <input id="edad" name="edad" type="number" class="adivino" style="width: 160px; height: 28px; font-size: 22px; text-align: center; border-radius:5px" required><br>
+        <input id="edad" name="edad" type="number" class="adivino" style="width: 160px; height: 18px; font-size: 20px; text-align: center; border-radius:5px" required><br>
 
         <label>Selecciona su lado de la fuerza:</label>
-        <select id="lado" name="lado">
+        <select id="lado" name="lado" class="select">
             <option value="Seleccione">Seleccione</option>
             <option value="Luminoso">Luminoso</option>
             <option value="Oscuro">Oscuro</option>
         </select><br>
 
         <label>Selecciona su nivel de poder:</label>
-        <select id="poder" name="poder">
+        <select id="poder" name="poder" class="select">
             <option value=1>1</option>
             <option value=2>2</option>
             <option value=3>3</option>
@@ -67,7 +68,7 @@
 
         <div id="mensajeError"></div>
 
-        <input type="submit" value="CREAR" class="enviar" style="width: 120px; height: 40px; font-size: 22px; text-align: center; background-color: yellow; border-radius: 5px">
+        <input type="submit" value="CREAR" class="enviar" style="width: 120px; height: 40px; font-size: 20px; text-align: center; background-color: yellow; border-radius: 5px">
     </form>
 
     </main>
@@ -75,6 +76,12 @@
         document.getElementById("img").addEventListener("dblclick", dblclicker);
         function dblclicker(){
             alert("Te has unido a la fuerza!");
+            document.getElementById("no_haga").style.display = "none";
+        }
+
+        document.getElementById("img").addEventListener("mouseover", mouseover);
+        function mouseover(){
+            document.getElementById("no_haga").style.display = "block";
         }
 
         const form = document.getElementById('form');
